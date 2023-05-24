@@ -1,6 +1,11 @@
 #include "monty.h"
 
-void trim_whitespace(char *str) {
+/**
+ * trim_whitespace - Trims leading and trailing whitespace from a string.
+ * @str: The string to trim.
+ */
+void trim_whitespace(char *str)
+{
 	int i = 0;
 	int j = 0;
 	int len = strlen(str);
@@ -8,7 +13,8 @@ void trim_whitespace(char *str) {
 	while (str[i] == ' ' || str[i] == '\t')
 		i++;
 
-	while (i < len) {
+	while (i < len)
+	{
 		str[j] = str[i];
 		i++;
 		j++;
