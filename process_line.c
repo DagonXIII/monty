@@ -93,11 +93,11 @@ void process_line(char *line, unsigned int line_number, stack_t **stack)
 	}
 	else if (strcmp(opcode, "stack") == 0)
 	{
-		stack(stack, line_number);
+		stack(NULL, line_number);
 	}
 	else if (strcmp(opcode, "queue") == 0)
 	{
-		queue(stack, line_number);
+		queue(NULL, line_number);
 	}
 	else
 	{
