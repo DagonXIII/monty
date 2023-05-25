@@ -63,7 +63,7 @@ void pstr(stack_t **stack);
 int is_ascii(int value);
 void rotl(stack_t **stack);
 void rotr(stack_t **stack, unsigned int line_number);
-void stack(stack_t **stack, unsigned int line_number);
+void _stack(stack_t **stack, unsigned int line_number);
 void queue(stack_t **stack, unsigned int line_number);
 
 #endif

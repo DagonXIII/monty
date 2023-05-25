@@ -8,7 +8,7 @@ int stack_format;
  * @stack: Double pointer to the top of the stack.
  * @line_number: Line number of the opcode being executed.
  */
-void stack(stack_t **stack, unsigned int line_number)
+void _stack(stack_t **stack, unsigned int line_number)
 {
 	(void)stack;
 	(void)line_number;
