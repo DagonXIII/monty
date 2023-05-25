@@ -90,6 +90,7 @@ void process_line(char *line, unsigned int line_number, stack_t **stack)
 	else if (strcmp(opcode, "rotr") == 0)
         {
                 rotr(stack);
+	}
 	else
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", line_number, opcode);
