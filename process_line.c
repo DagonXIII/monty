@@ -89,7 +89,7 @@ void process_line(char *line, unsigned int line_number, stack_t **stack)
 	}
 	else if (strcmp(opcode, "rotr") == 0)
         {
-                rotr(stack);
+                rotr(stack, line_number);
 	}
 	else
 	{

@@ -3,11 +3,14 @@
 /**
  * rotr - Rotates the stack to the bottom.
  * @stack: Double pointer to the top of the stack.
+ * @line_number: Line number of the opcode being executed.
  */
-void rotr(stack_t **stack)
+void rotr(stack_t **stack, unsigned int line_number)
 {
-	 stack_t *temp = *stack;
+	stack_t *temp = *stack;
 	int last_value;
+
+	(void)line_number;
 
 	if (temp == NULL || temp->next == NULL)
 		return;
@@ -25,7 +28,7 @@ void rotr(stack_t **stack)
 		{
 			temp->n = temp->prev->n;
 		}
-		temp = temp->prev;
+                temp = temp->prev;
 	}
 
 	(*stack)->n = last_value;
