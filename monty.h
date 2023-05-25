@@ -8,6 +8,9 @@
 #include <sys/types.h>
 #include <ctype.h>
 
+#define STACK 0
+#define QUEUE 1
+
 extern int stack_format;
 
 /**
