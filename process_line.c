@@ -88,8 +88,16 @@ void process_line(char *line, unsigned int line_number, stack_t **stack)
 		rotl(stack);
 	}
 	else if (strcmp(opcode, "rotr") == 0)
-        {
-                rotr(stack, line_number);
+	{
+		rotr(stack, line_number);
+	}
+	else if (strcmp(opcode, "stack") == 0)
+	{
+		stack(stack, line_number);
+	}
+	else if (strcmp(opcode, "queue") == 0)
+	{
+		queue(stack, line_number);
 	}
 	else
 	{
